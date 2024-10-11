@@ -69,7 +69,7 @@ class UserService {
 
     // Send verification email
     static async sendVerificationEmail({ full_name, email, verificationToken }) {
-      const verificationLink = `http://localhost:3000/api/verify-email?token=${verificationToken}`;
+      const verificationLink = `https://parkeasy-application.onrender.com/api/verify-email?token=${verificationToken}`;
   
       const mailOptions = {
         from: process.env.GMAIL_USER,
