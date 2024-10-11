@@ -67,7 +67,7 @@ router.get('/auth/google/callback',
   passport.authenticate('google', { failureRedirect: '/' }), 
   (req, res) => {
     const token = req.user.token;
-    res.redirect(`http://localhost:3000/dashboard?token=${token}`);
+    res.redirect(`https://parkeasy-application.onrender.com/dashboard?token=${token}`);
   }
 );
 

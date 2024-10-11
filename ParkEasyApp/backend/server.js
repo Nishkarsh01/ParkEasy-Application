@@ -9,7 +9,10 @@ require('./services/AuthService');  // Initialize Passport.js
 
 const app = express();
 
-app.use(cors());  // Enable CORS for all routes
+app.use(cors({
+  origin: ['https://localhost:3000', 'https://parkeasy-application.onrender.com'],  // Adjust these URLs as per your environment
+  credentials: true
+}));
 
 const port = process.env.PORT || 3000;
 
