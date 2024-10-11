@@ -34,7 +34,7 @@ const RegisterScreen = ({ navigation, route }) => {
 
     try {
       // Send a POST request to your back-end to register the user
-      const response = await axios.post('http://192.168.68.51:3000/api/initiate-registration', {
+      const response = await axios.post('https://parkeasy-application.onrender.com/api/initiate-registration', {
         full_name: fullName,
         email: email,
         password: password,

@@ -9,7 +9,7 @@ const VerifyEmailScreen = ({ navigation, route }) => {
   const handleResendEmail = async () => {
     try {
       // Resend verification email logic
-      await axios.post('http://192.168.68.51:3000/api/resend-verification', { email });
+      await axios.post('https://parkeasy-application.onrender.com/api/resend-verification', { email });
       Alert.alert('Success', 'Verification email resent! Please check your inbox.');
     } catch (error) {
       Alert.alert('Error', 'Failed to resend verification email.');

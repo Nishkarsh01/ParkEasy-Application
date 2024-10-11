@@ -11,7 +11,7 @@ const LoginScreen = ({ navigation }) => {
   const handleLogin = async () => {
     try {
       // Send a POST request to your back-end login API
-      const response = await axios.post('http://192.168.68.51:3000/api/login', {
+      const response = await axios.post('https://parkeasy-application.onrender.com/api/login', {
         email,
         password
       }, {
